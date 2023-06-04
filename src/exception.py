@@ -1,6 +1,4 @@
 import sys
-#import os
-#import logging
 from src.logger import logging
 
 
@@ -24,21 +22,12 @@ class CustomException(Exception):
    
     def __str__(self):
         return self.error_message
-
-#LOG_FILE_PATH = os.path.join(LOG_FILE)
+    
 '''
-logging.basicConfig(
-
-
-    filename= LOG_FILE_PATH,
-    format= "[ %s]",
-    level= logging.INFO,
-)
-
 if __name__=="__main__":
    try:
        a=1/0
    except Exception as e:
     logging.info("Devide by zero")
     raise CustomException(e,sys)
-'''    
+''' 
